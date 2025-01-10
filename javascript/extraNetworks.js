@@ -106,7 +106,7 @@ function setupExtraNetworksForTab(tabname) {
             var parent = gradioApp().querySelector('#' + tabname_full + "_cards");
             var reverse = sort_dir.dataset.sortdir == "Descending";
             var activeSearchElem = gradioApp().querySelector('#' + tabname_full + "_controls .extra-network-control--sort.extra-network-control--enabled");
-            var sortKey = activeSearchElem ? activeSearchElem.dataset.sortkey : "default";
+            var sortKey = activeSearchElem ? activeSearchElem.dataset.sortkey : "date_created";/*"default";*/
             var sortKeyDataField = "sort" + sortKey.charAt(0).toUpperCase() + sortKey.slice(1);
             var sortKeyStore = sortKey + "-" + sort_dir.dataset.sortdir + "-" + cards.length;
 
